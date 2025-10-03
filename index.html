@@ -63,26 +63,41 @@
                     </tr>
             </table>
         </div>
-        <div class="Contact Info">
-            <h5>Contact Me</h5>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                    <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
-                </form>
+        
+        <div class="Action">
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            <form action="#">
+                <p>
+                    <label>
+                        <input type="checkbox"> 
+                        <span>Subscribe to newsletter</span>
+                    </label>
                 <br>
-                Gender:
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
+                <br>
+                Gender
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked>
+                        <span>Male</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio">
+                        <span>Female</span>
+                    </label>
+                </p>
+            </form>
         </div>
-        <div class="Fav Topic">        
-                <label for="topic">Favorite Topic:</label>
-                    <select id="topic" name="topic">
-                        <option value="coding">Coding</option>
-                        <option value="music">Music</option>
-                        <option value="travel">Travel</option>
-                    </select>
-        </div>
+        <label>Favorite Topic</label>
+        <select class="browser-default">
+            <option value="select" disabled selected>Choose your option</option>
+            <option value="1">Coding</option>
+            <option value="2">Music</option>
+            <option value="3">Travel</option>
+        </select>
         <div>
             <button class="btn waves-effect waves-light" type="submit" name="action">
                 <i class="material-icons right">send</i>
@@ -90,4 +105,3 @@
         </div>
     </body>
 </html>
-
